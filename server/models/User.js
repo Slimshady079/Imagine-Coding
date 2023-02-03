@@ -21,3 +21,5 @@ const userSchema = new Schema ({
         minlength: 5,
     }
 })
+
+module.exports = { User }
