@@ -8,6 +8,12 @@ type User {
     password: String
 }
 
+type Question {
+    _id: ID
+    question: String
+    answer: String
+}
+
 type Auth {
     token: ID!
     User: User
@@ -23,3 +29,4 @@ type Mutation {
     login(username: String!, password: String!) Auth
 }
 `
+module.exports = typeDefs;
